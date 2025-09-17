@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly OS update check timer
+
+[Timer]
+OnCalendar=Sun *-*-* 02:30:00
+Persistent=true
+Unit=os-update-weekly.service
+
+[Install]
+WantedBy=timers.target

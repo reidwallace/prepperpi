@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly content update (disabled by default)
+
+[Timer]
+OnCalendar=Sun *-*-* 03:00:00
+Persistent=true
+Unit=prepperpi-update.service
+
+[Install]
+WantedBy=timers.target

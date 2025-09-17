@@ -1,0 +1,11 @@
+[Unit]
+Description=PrepperPi Content Update
+
+[Service]
+Type=oneshot
+User=prepperpi
+Group=prepperpi
+WorkingDirectory=/opt/prepperpi
+ExecStart=/opt/prepperpi/scripts/update.sh
+StandardOutput=append:/var/log/prepperpi/update.log
+StandardError=append:/var/log/prepperpi/update.log

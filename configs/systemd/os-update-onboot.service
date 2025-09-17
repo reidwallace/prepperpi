@@ -1,0 +1,13 @@
+[Unit]
+Description=Run OS updates on boot (safe defaults)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'apt-get update && unattended-upgrade -d || true'
+StandardOutput=append:/var/log/prepperpi/os-update.log
+StandardError=append:/var/log/prepperpi/os-update.log
+
+[Install]
+WantedBy=multi-user.target

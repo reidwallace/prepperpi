@@ -1,0 +1,12 @@
+[Unit]
+Description=Kiwix offline server
+After=network.target
+
+[Service]
+User=prepperpi
+Group=prepperpi
+ExecStart=/usr/bin/kiwix-serve --port=8080 --library /mnt/library/10_Wikipedia_ZIM/library.xml
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

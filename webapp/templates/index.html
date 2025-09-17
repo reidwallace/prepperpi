@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrepperPi</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 1.5rem; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+    button { padding: 0.5rem 0.9rem; border-radius: 8px; border: 1px solid #ccc; cursor: pointer; }
+    pre { background: #f6f8fa; padding: 1rem; border-radius: 8px; max-height: 320px; overflow: auto; }
+    .muted { color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PrepperPi — Offline Library</h1>
+    <div>
+      <a href="/kiwix/" target="_blank"><button>Open Kiwix</button></a>
+      <button id="btnUpdate">Run Update</button>
+    </div>
+  </header>
+
+  <p class="muted">Click <strong>Run Update</strong> to fetch new/updated content listed in the manifest. Open <strong>Kiwix</strong> for offline wikis.</p>
+
+  <h2>Update Log</h2>
+  <pre id="log">(no log yet)</pre>
+
+  <script>
+    async function startUpdate(){
+      const res = await fetch('/update/start', {method:'POST'});
+      const data = await res.json();
+      alert(data.ok ? 'Update started' : ('Update failed: ' + data.error));
+      loadLog();
+    }
+    async function loadLog(){
+      const res = await fetch('/update/log');
+      const data = await res.json();
+      if(data.ok){ document.getElementById('log').textContent = data.log; }
+    }
+    document.getElementById('btnUpdate').addEventListener('click', startUpdate);
+    loadLog();
+    setInterval(loadLog, 5000);
+  </script>
+</body>
+</html>

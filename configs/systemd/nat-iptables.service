@@ -1,0 +1,11 @@
+[Unit]
+Description=Apply NAT rules (wlan0->eth0)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/prepperpi/scripts/apply_nat.sh
+
+[Install]
+WantedBy=multi-user.target

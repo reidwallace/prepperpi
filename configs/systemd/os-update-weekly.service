@@ -1,0 +1,8 @@
+[Unit]
+Description=Weekly OS update check (log-only)
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'apt-get update && apt list --upgradable || true'
+StandardOutput=append:/var/log/prepperpi/os-update.log
+StandardError=append:/var/log/prepperpi/os-update.log

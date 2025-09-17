@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "Wikipedia EN (no images)",
+      "url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_nopic.zim",
+      "dest_rel": "10_Wikipedia_ZIM",
+      "filename": "wikipedia_en_all_nopic.zim",
+      "checksum_url": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_nopic.zim.sha256"
+    },
+    {
+      "name": "Wikivoyage EN",
+      "url": "https://download.kiwix.org/zim/wikivoyage/wikivoyage_en_all.zim",
+      "dest_rel": "10_Wikipedia_ZIM",
+      "filename": "wikivoyage_en_all.zim",
+      "checksum_url": "https://download.kiwix.org/zim/wikivoyage/wikivoyage_en_all.zim.sha256"
+    },
+    {
+      "name": "Wiktionary EN (no images)",
+      "url": "https://download.kiwix.org/zim/wiktionary/wiktionary_en_all_nopic.zim",
+      "dest_rel": "10_Wikipedia_ZIM",
+      "filename": "wiktionary_en_all_nopic.zim",
+      "checksum_url": "https://download.kiwix.org/zim/wiktionary/wiktionary_en_all_nopic.zim.sha256"
+    }
+  ]
+}

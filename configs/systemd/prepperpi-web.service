@@ -1,0 +1,14 @@
+[Unit]
+Description=PrepperPi Web UI
+After=network.target
+
+[Service]
+User=prepperpi
+Group=prepperpi
+WorkingDirectory=/opt/prepperpi/webapp
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/prepperpi/venv/bin/waitress-serve --host=127.0.0.1 --port=5001 app:app
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
