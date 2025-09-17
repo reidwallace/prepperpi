@@ -135,13 +135,13 @@ python3 /opt/prepperpi/scripts/monitor.py
 
 `
 /opt/prepperpi/
-â”œâ”€â”€ config/          # Configuration files
-â”œâ”€â”€ scripts/         # Installation and management scripts
-â”œâ”€â”€ web/            # Web interface files
-â”œâ”€â”€ logs/           # System and application logs
-â”œâ”€â”€ backup/         # Automated backups
-â”œâ”€â”€ systemd/        # Service definitions
-â””â”€â”€ data/           # Kiwix content and library
+config/          # Configuration files
+scripts/         # Installation and management scripts
+web/            # Web interface files
+logs/           # System and application logs
+backup/         # Automated backups
+systemd/        # Service definitions
+data/           # Kiwix content and library
 `
 
 ## Security Considerations
