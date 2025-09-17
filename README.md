@@ -261,10 +261,23 @@ sudo /opt/prepperpi/scripts/verify_install.sh
    sudo systemctl status nginx
    ```
 
+<<<<<<< HEAD
 2. **Check Flask application**:
    ```bash
    sudo systemctl status prepperpi-monitor
    ```
+=======
+`
+/opt/prepperpi/
+config/          # Configuration files
+scripts/         # Installation and management scripts
+web/            # Web interface files
+logs/           # System and application logs
+backup/         # Automated backups
+systemd/        # Service definitions
+data/           # Kiwix content and library
+`
+>>>>>>> 685c56559e3db77be73d60da282d8ee04020e068
 
 3. **View error logs**:
    ```bash
