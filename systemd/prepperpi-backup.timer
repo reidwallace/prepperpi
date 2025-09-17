@@ -1,0 +1,10 @@
+﻿[Unit]
+Description=PrepperPi Daily Backup Timer
+Requires=prepperpi-backup.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,10 @@
+﻿[Unit]
+Description=PrepperPi Backup Service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/opt/prepperpi/scripts/backup.sh
+
+[Install]
+WantedBy=multi-user.target

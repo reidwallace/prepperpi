@@ -1,0 +1,18 @@
+﻿[Unit]
+Description=PrepperPi Kiwix Server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/opt/prepperpi/data
+ExecStart=/usr/bin/kiwix-serve --port=8080 --library=/opt/prepperpi/data/library.xml
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

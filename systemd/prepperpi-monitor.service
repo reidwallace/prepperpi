@@ -1,0 +1,16 @@
+﻿[Unit]
+Description=PrepperPi System Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+ExecStart=/usr/bin/python3 /opt/prepperpi/scripts/monitor.py
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

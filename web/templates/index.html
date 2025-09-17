@@ -1,0 +1,74 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard">
+    <div class="hero">
+        <h2>Welcome to PrepperPi</h2>
+        <p>Your offline knowledge server is ready to serve content without internet connectivity.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-book-open"></i> Knowledge Library</h3>
+            </div>
+            <div class="card-content">
+                <p>Access Wikipedia, Stack Overflow, and other offline content.</p>
+                <a href="/kiwix/" class="btn btn-primary">Browse Library</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-chart-bar"></i> System Status</h3>
+            </div>
+            <div class="card-content" id="system-stats">
+                <div class="stat">
+                    <span class="stat-label">CPU Usage:</span>
+                    <span class="stat-value" id="cpu-usage">Loading...</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Memory Usage:</span>
+                    <span class="stat-value" id="memory-usage">Loading...</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Connected Clients:</span>
+                    <span class="stat-value" id="client-count">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-download"></i> Content Management</h3>
+            </div>
+            <div class="card-content">
+                <p>Update offline content and manage library.</p>
+                <button onclick="updateContent()" class="btn btn-secondary">
+                    <i class="fas fa-sync-alt"></i> Update Content
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-info-circle"></i> System Information</h3>
+            </div>
+            <div class="card-content">
+                <div class="stat">
+                    <span class="stat-label">Version:</span>
+                    <span class="stat-value">PrepperPi v2.0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Uptime:</span>
+                    <span class="stat-value" id="uptime">Loading...</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Temperature:</span>
+                    <span class="stat-value" id="temperature">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
