@@ -1,0 +1,6 @@
+# Example manifest for 'standard' content set
+# One ZIM item per line (URL or file name). Lines starting with '#' are comments.
+
+# https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2024-08.zim
+# https://download.kiwix.org/zim/vikidia/vikidia_en_all_2024-08.zim
+# Checksums may be provided via .sha256 files alongside ZIMs.

@@ -4,9 +4,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def index():
-    return '''
+    return """
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,11 +25,12 @@ def index():
     <p>Status: All services operational</p>
 </body>
 </html>
-'''
+"""
 
-@app.route('/status')  
+
+@app.route("/status")
 def status():
-    return '''
+    return """
 <!DOCTYPE html>
 <html>
 <head><title>Status</title></head>
@@ -40,19 +42,23 @@ def status():
     <p>WiFi: Broadcasting</p>
 </body>
 </html>
-'''
+"""
 
-@app.route('/api/system/stats')
+
+@app.route("/api/system/stats")
 def system_stats():
     try:
-        return jsonify({
-            'cpu_percent': psutil.cpu_percent(),
-            'memory_percent': psutil.virtual_memory().percent,
-            'timestamp': datetime.now().isoformat(),
-            'status': 'running'
-        })
+        return jsonify(
+            {
+                "cpu_percent": psutil.cpu_percent(),
+                "memory_percent": psutil.virtual_memory().percent,
+                "timestamp": datetime.now().isoformat(),
+                "status": "running",
+            }
+        )
     except:
-        return jsonify({'error': 'Stats unavailable', 'status': 'running'})
+        return jsonify({"error": "Stats unavailable", "status": "running"})
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

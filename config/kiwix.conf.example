@@ -1,0 +1,8 @@
+# Example Kiwix configuration
+# Copy to config/kiwix.conf and edit values.
+
+KIWIX_PORT=8080
+KIWIX_BIND=0.0.0.0
+KIWIX_DATA_DIR="/opt/prepperpi/data/zim"
+# Example ZIM files (use manifests to manage sets)
+# KIWIX_ZIMS="wikipedia_en_all_maxi_2024-08.zim vikidia_en_all.zim"
