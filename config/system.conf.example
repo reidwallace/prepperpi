@@ -1,0 +1,6 @@
+# Example system configuration
+# Copy to config/system.conf and edit values.
+
+PI_HOSTNAME="prepperpi"
+PI_TIMEZONE="America/Chicago"
+PI_LOCALE="en_US.UTF-8"

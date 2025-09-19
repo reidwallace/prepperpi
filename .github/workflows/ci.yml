@@ -1,0 +1,28 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies (if present)
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install --upgrade pytest ruff black shellcheck-py
+      - name: Ruff (Python linter)
+        run: ruff check .
+      - name: Black (format check)
+        run: black --check .
+      - name: Pytest (if tests present)
+        run: |
+          if [ -d tests ]; then pytest -q; else echo "No tests/ directory, skipping"; fi
+      - name: Shellcheck (.sh scripts)
+        run: |
+          if command -v shellcheck >/dev/null 2>&1; then
+            find . -type f -name "*.sh" -print0 | xargs -0 -I{} bash -lc 'shellcheck "{}" || true'
+          else
+            echo "shellcheck not found"
+          fi

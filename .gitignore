@@ -1,39 +1,11 @@
-﻿# PrepperPi .gitignore
-
-# Log files
-logs/*.log
-*.log
-
-# Backup files
-backup/*.tar.gz
-backup/backup_*
-
-# Data files
+# PrepperPi additions
 data/
-
-# Temporary files
-*.tmp
-*.temp
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Python cache
+logs/
+backup/
+.env
+*.env
+*.local
 __pycache__/
 *.pyc
-*.pyo
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Node modules (if any)
-node_modules/
-
-# Environment files
-.env
-.env.local
+*.log
+.DS_Store
