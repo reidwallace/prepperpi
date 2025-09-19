@@ -1,0 +1,10 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+#Start small: only basic errors/warnings; ignore Long lines for now
+select = ["E","F","W"]
+ignore = ["E501"]

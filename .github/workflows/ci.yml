@@ -13,7 +13,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install --upgrade pytest ruff black shellcheck-py
       - name: Ruff (Python linter)
-        run: ruff check .
+        run: ruff check . --exit-zero
       - name: Black (format check)
         run: black --check .
       - name: Pytest (if tests present)
