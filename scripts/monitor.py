@@ -66,9 +66,7 @@ class SystemMonitor:
     def get_cpu_temperature(self):
         """Get CPU temperature"""
         try:
-            result = subprocess.run(
-                ["vcgencmd", "measure_temp"], capture_output=True, text=True
-            )
+            result = subprocess.run(["vcgencmd", "measure_temp"], capture_output=True, text=True)
             if result.returncode == 0:
                 temp_str = result.stdout.strip()
                 temp = float(temp_str.split("=")[1].split("'")[0])
@@ -107,10 +105,7 @@ class SystemMonitor:
         if disk_percent > self.alert_thresholds["disk_percent"]:
             alerts.append(f"High disk usage: {disk_percent:.1f}%")
 
-        if (
-            stats["temperature"]
-            and stats["temperature"] > self.alert_thresholds["temperature"]
-        ):
+        if stats["temperature"] and stats["temperature"] > self.alert_thresholds["temperature"]:
             alerts.append(f"High temperature: {stats['temperature']:.1f}Â°C")
 
         return alerts
