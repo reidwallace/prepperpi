@@ -9174,5 +9174,594 @@
     },
     "temperature": 48.8,
     "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:47:51.445619",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803682816,
+      "percent": 7.7,
+      "used": 489259008,
+      "free": 7151927296,
+      "active": 694845440,
+      "inactive": 386465792,
+      "buffers": 42713088,
+      "cached": 770965504,
+      "shared": 84230144,
+      "slab": 71532544
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016126976,
+      "free": 110793003008,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 45.5,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:48:52.476106",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804534784,
+      "percent": 7.7,
+      "used": 489111552,
+      "free": 7152762880,
+      "active": 694845440,
+      "inactive": 386482176,
+      "buffers": 42762240,
+      "cached": 770228224,
+      "shared": 83492864,
+      "slab": 71548928
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016126976,
+      "free": 110793003008,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 46.1,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:49:53.505651",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804551168,
+      "percent": 7.7,
+      "used": 489127936,
+      "free": 7152713728,
+      "active": 694845440,
+      "inactive": 386547712,
+      "buffers": 42795008,
+      "cached": 770228224,
+      "shared": 83492864,
+      "slab": 71548928
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016126976,
+      "free": 110793003008,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 46.6,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:50:54.535185",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804076032,
+      "percent": 7.7,
+      "used": 489586688,
+      "free": 7152222208,
+      "active": 694845440,
+      "inactive": 386564096,
+      "buffers": 42827776,
+      "cached": 770228224,
+      "shared": 83492864,
+      "slab": 71548928
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016126976,
+      "free": 110793003008,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 47.2,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:51:55.564759",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803617280,
+      "percent": 7.7,
+      "used": 490078208,
+      "free": 7151697920,
+      "active": 694878208,
+      "inactive": 386629632,
+      "buffers": 42860544,
+      "cached": 770228224,
+      "shared": 83492864,
+      "slab": 71548928
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016131072,
+      "free": 110792998912,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 48.3,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:52:56.594297",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803420672,
+      "percent": 7.7,
+      "used": 490258432,
+      "free": 7151484928,
+      "active": 694878208,
+      "inactive": 386646016,
+      "buffers": 42893312,
+      "cached": 770228224,
+      "shared": 83492864,
+      "slab": 71532544
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016131072,
+      "free": 110792998912,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 47.7,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:53:57.623905",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803011072,
+      "percent": 7.7,
+      "used": 489357312,
+      "free": 7151026176,
+      "active": 694878208,
+      "inactive": 386695168,
+      "buffers": 42926080,
+      "cached": 771555328,
+      "shared": 84819968,
+      "slab": 71548928
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016131072,
+      "free": 110792998912,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 47.2,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:54:58.653732",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804125184,
+      "percent": 7.7,
+      "used": 489537536,
+      "free": 7152140288,
+      "active": 694878208,
+      "inactive": 386695168,
+      "buffers": 42942464,
+      "cached": 770244608,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016131072,
+      "free": 110792998912,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14448,
+      "bytes_recv": 88452,
+      "packets_sent": 92,
+      "packets_recv": 577
+    },
+    "temperature": 48.3,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:55:59.683611",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803895808,
+      "percent": 7.7,
+      "used": 489783296,
+      "free": 7151878144,
+      "active": 694878208,
+      "inactive": 386727936,
+      "buffers": 42958848,
+      "cached": 770244608,
+      "shared": 83492864,
+      "slab": 71614464
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016131072,
+      "free": 110792998912,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14518,
+      "bytes_recv": 88452,
+      "packets_sent": 93,
+      "packets_recv": 577
+    },
+    "temperature": 47.7,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:57:00.713558",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7802912768,
+      "percent": 7.7,
+      "used": 490717184,
+      "free": 7150895104,
+      "active": 694878208,
+      "inactive": 386727936,
+      "buffers": 43008000,
+      "cached": 770244608,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016131072,
+      "free": 110792998912,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14518,
+      "bytes_recv": 88452,
+      "packets_sent": 93,
+      "packets_recv": 577
+    },
+    "temperature": 47.7,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:58:01.743564",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803617280,
+      "percent": 7.7,
+      "used": 490029056,
+      "free": 7151534080,
+      "active": 694960128,
+      "inactive": 386793472,
+      "buffers": 43040768,
+      "cached": 770260992,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016135168,
+      "free": 110792994816,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14518,
+      "bytes_recv": 88452,
+      "packets_sent": 93,
+      "packets_recv": 577
+    },
+    "temperature": 48.8,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T15:59:02.773625",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804157952,
+      "percent": 7.7,
+      "used": 489488384,
+      "free": 7152041984,
+      "active": 694878208,
+      "inactive": 386826240,
+      "buffers": 43073536,
+      "cached": 770260992,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016135168,
+      "free": 110792994816,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14518,
+      "bytes_recv": 88452,
+      "packets_sent": 93,
+      "packets_recv": 577
+    },
+    "temperature": 47.2,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T16:00:03.803719",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7802945536,
+      "percent": 7.7,
+      "used": 490700800,
+      "free": 7150796800,
+      "active": 694878208,
+      "inactive": 386859008,
+      "buffers": 43106304,
+      "cached": 770260992,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016135168,
+      "free": 110792994816,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14518,
+      "bytes_recv": 88452,
+      "packets_sent": 93,
+      "packets_recv": 577
+    },
+    "temperature": 47.7,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T16:01:04.833868",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804223488,
+      "percent": 7.7,
+      "used": 489455616,
+      "free": 7152025600,
+      "active": 694894592,
+      "inactive": 386908160,
+      "buffers": 43122688,
+      "cached": 770260992,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016135168,
+      "free": 110792994816,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14625,
+      "bytes_recv": 88452,
+      "packets_sent": 94,
+      "packets_recv": 577
+    },
+    "temperature": 46.6,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T16:02:05.864171",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803928576,
+      "percent": 7.7,
+      "used": 489701376,
+      "free": 7151730688,
+      "active": 694894592,
+      "inactive": 386908160,
+      "buffers": 43171840,
+      "cached": 770260992,
+      "shared": 83492864,
+      "slab": 71581696
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016135168,
+      "free": 110792994816,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14625,
+      "bytes_recv": 88452,
+      "packets_sent": 94,
+      "packets_recv": 577
+    },
+    "temperature": 46.6,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T16:03:06.894399",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7803502592,
+      "percent": 7.7,
+      "used": 490143744,
+      "free": 7151239168,
+      "active": 694894592,
+      "inactive": 386957312,
+      "buffers": 43204608,
+      "cached": 770277376,
+      "shared": 83492864,
+      "slab": 71598080
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016139264,
+      "free": 110792990720,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14625,
+      "bytes_recv": 88452,
+      "packets_sent": 94,
+      "packets_recv": 577
+    },
+    "temperature": 48.3,
+    "connected_clients": 1
+  },
+  {
+    "timestamp": "2025-09-19T16:04:07.924932",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7804403712,
+      "percent": 7.7,
+      "used": 489209856,
+      "free": 7152140288,
+      "active": 694894592,
+      "inactive": 386957312,
+      "buffers": 43237376,
+      "cached": 770277376,
+      "shared": 83492864,
+      "slab": 71614464
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016139264,
+      "free": 110792990720,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14625,
+      "bytes_recv": 88452,
+      "packets_sent": 94,
+      "packets_recv": 577
+    },
+    "temperature": 47.7,
+    "connected_clients": 0
+  },
+  {
+    "timestamp": "2025-09-19T16:05:08.954570",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7739817984,
+      "percent": 8.5,
+      "used": 552468480,
+      "free": 7074988032,
+      "active": 694681600,
+      "inactive": 398737408,
+      "buffers": 44367872,
+      "cached": 783040512,
+      "shared": 84230144,
+      "slab": 72876032
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6016139264,
+      "free": 110792990720,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14625,
+      "bytes_recv": 88452,
+      "packets_sent": 94,
+      "packets_recv": 577
+    },
+    "temperature": 49.9,
+    "connected_clients": 0
+  },
+  {
+    "timestamp": "2025-09-19T16:06:09.975318",
+    "cpu_percent": 0.0,
+    "memory": {
+      "total": 8454864896,
+      "available": 7688634368,
+      "percent": 9.1,
+      "used": 600309760,
+      "free": 6935216128,
+      "active": 708444160,
+      "inactive": 475185152,
+      "buffers": 50790400,
+      "cached": 868548608,
+      "shared": 84246528,
+      "slab": 80723968
+    },
+    "disk": {
+      "total": 123082178560,
+      "used": 6018207744,
+      "free": 110790922240,
+      "percent": 5.2
+    },
+    "network": {
+      "bytes_sent": 14625,
+      "bytes_recv": 88452,
+      "packets_sent": 94,
+      "packets_recv": 577
+    },
+    "temperature": 47.2,
+    "connected_clients": 0
   }
 ]
