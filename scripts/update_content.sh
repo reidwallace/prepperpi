@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # PrepperPi Enhanced Content Management Script
 # Handles ZIM files, PDFs, maps, and other offline content sources
 

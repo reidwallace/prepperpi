@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Status - PrepperPi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 10px; }
+        .status-good { color: green; }
+        .status-bad { color: red; }
+        h1 { color: #2c3e50; }
+        .back-link { text-decoration: none; color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>System Status</h1>
+        <p><a href="/" class="back-link">&larr; Back to Dashboard</a></p>
+        
+        <h2>System Information</h2>
+        <p>Status page is working! Loading real-time data...</p>
+        
+        <div id="system-info">
+            <p>Loading system information...</p>
+        </div>
+
+        <script>
+            fetch('/api/system/stats')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('system-info').innerHTML = 
+                        '<p><strong>CPU Usage:</strong> ' + data.cpu_percent + '%</p>' +
+                        '<p><strong>Memory Usage:</strong> ' + data.memory_percent + '%</p>' +
+                        '<p><strong>Timestamp:</strong> ' + data.timestamp + '</p>';
+                })
+                .catch(error => {
+                    document.getElementById('system-info').innerHTML = 
+                        '<p class="status-bad">Error loading system stats</p>';
+                });
+        </script>
+    </div>
+</body>
+</html>
