@@ -1,0 +1,10 @@
+[Unit]
+Description=Monthly PrepperPi Content Update
+
+[Timer]
+OnCalendar=monthly
+RandomizedDelaySec=86400
+Persistent=true
+
+[Install]
+WantedBy=timers.target

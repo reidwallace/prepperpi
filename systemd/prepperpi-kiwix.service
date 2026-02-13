@@ -1,4 +1,4 @@
-﻿[Unit]
+[Unit]
 Description=PrepperPi Kiwix Server
 After=network.target
 Wants=network.target
@@ -8,7 +8,9 @@ Type=simple
 User=pi
 Group=pi
 WorkingDirectory=/opt/prepperpi/data
-ExecStart=/usr/bin/kiwix-serve --port=8080 --library=/opt/prepperpi/data/library.xml
+EnvironmentFile=-/opt/prepperpi/config/.env
+ExecStart=/usr/bin/kiwix-serve -p ${KIWIX_PORT} --library /opt/prepperpi/data/library.xml
+Environment=KIWIX_PORT=8080
 Restart=always
 RestartSec=10
 StandardOutput=journal

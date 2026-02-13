@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
-LIB_DIR="/mnt/library/10_Wikipedia_ZIM"
-LIB_XML="$LIB_DIR/library.xml"
-mkdir -p "$LIB_DIR"
-rm -f "$LIB_XML"; touch "$LIB_XML"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_DIR="$(dirname "$SCRIPT_DIR")"
+source "$BASE_DIR/config/kiwix.conf"
+
+mkdir -p "$KIWIX_DATA_DIR"
+rm -f "$KIWIX_LIBRARY_FILE"
+
 if ! command -v kiwix-manage >/dev/null 2>&1; then
   echo "kiwix-manage not found. Install kiwix-tools."
   exit 0
 fi
+
 shopt -s nullglob
-for zim in "$LIB_DIR"/*.zim; do
+for zim in "$KIWIX_DATA_DIR"/*.zim; do
   echo "Adding $zim"
-  kiwix-manage "$LIB_XML" add "$zim"
+  kiwix-manage "$KIWIX_LIBRARY_FILE" add "$zim"
 done
-echo "Library written: $LIB_XML"
+echo "Library written: $KIWIX_LIBRARY_FILE"

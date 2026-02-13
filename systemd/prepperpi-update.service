@@ -1,0 +1,12 @@
+[Unit]
+Description=PrepperPi Content Update
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/bin/bash /opt/prepperpi/scripts/update.sh
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=86400
